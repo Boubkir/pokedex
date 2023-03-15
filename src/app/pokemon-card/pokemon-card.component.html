@@ -1,0 +1,13 @@
+<div class="content">
+  <div class="poke-card" *ngFor="let pokemon of sortedPokemons"
+    [ngStyle]="{'background-color': colours[pokemon.types[0].type.name]}" [ngClass]="pokemon.types[0].type.name">
+    <div class="poke-card-head">
+      <h3>#{{pokemon.id}}</h3>
+      <h3>{{pokemon.name | titlecase}} </h3>
+    </div>
+    <p *ngFor="let type of pokemon.types">{{type.type.name}}</p>
+    <img [ngStyle]="{'height.px': pokemon.height*2 + 80}"
+      [src]="pokemon.sprites.versions['generation-v']['black-white'].animated.front_default" alt="">
+    <img class="water-mark" src="./assets/img/water-mark.png" alt="">
+  </div>
+</div>

@@ -1,0 +1,126 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100vw;
+  // background-image: url("/assets/img/background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  z-index: 2;
+}
+
+.poke-card {
+  padding: 20px;
+  min-width: 280px;
+  min-height: 180px;
+  // max-width: 280px;
+  // max-height: 180px;
+  border-radius: 20px;
+  position: relative;
+  color: white;
+  border: 4px solid;
+  border-style: dashed;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    max-height: 150px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 32px;
+  }
+
+  p {
+    background-color: rgba(225, 225, 225, 0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 5px 10px;
+  }
+}
+
+.poke-card-head {
+  display: flex;
+  gap: 20px;
+}
+
+.water-mark {
+  z-index: 0 !important;
+  height: 135px !important;
+  transform: rotate(-15deg);
+  right: 80px !important;
+}
+
+.normal {
+  border-color: #8b896c;
+}
+
+.fire {
+  border-color: #a53e00;
+}
+.water {
+  border-color: #2c4d8f;
+}
+.electric {
+  border-color: #c4a222;
+}
+.grass {
+  border-color: #608c3f;
+}
+.ice {
+  border-color: #7ebebb;
+}
+.fighting {
+  border-color: #8c1c1c;
+}
+.poison {
+  border-color: #872b86;
+}
+.ground {
+  border-color: #b28d37;
+}
+.flying {
+  border-color: #5d4aa5;
+}
+.psychic {
+  border-color: #d13c67;
+}
+.bug {
+  border-color: #798c1a;
+}
+.rock {
+  border-color: #7e6d22;
+}
+.ghost {
+  border-color: #5c4f76;
+}
+.dragon {
+  border-color: #5c2b8d;
+}
+.dark {
+  border-color: #4b3f32;
+}
+.steel {
+  border-color: #9696ab;
+}
+.fairy {
+  border-color: #b06c8a;
+}

@@ -1,0 +1,4 @@
+<header>
+  <img src="./assets/img/pokedex.webp" alt="">
+  <input #pokemonToSearch (keyup)="this.dataService.searchNext$.next(pokemonToSearch.value.toLowerCase().trim())" type="text" placeholder="Find your Pokemon">
+</header>

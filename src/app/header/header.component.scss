@@ -1,0 +1,44 @@
+header {
+  position: relative;
+  padding: 20px 0;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  background-image: url("/assets/img/background-header.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+  img {
+    height: 233px;
+    z-index: 2;
+  }
+
+  input {
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 2px solid #3468a5;
+    font-family: "PokeSolid";
+    font-size: 24px;
+    color: gray;
+    z-index: 2;
+  }
+}
+
+.background {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw !important;
+  height: auto;
+}
